@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2FA84F;
+  --color-primary-light: #4ade80;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2FA84F;
+  border-radius: 3px;
+}
+
+/* Smooth transitions */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
